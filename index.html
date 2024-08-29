@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Coffee Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to the Best Coffee in Town!</h2>
+            <p>Freshly brewed coffee every day. Enjoy our wide selection of coffee blends and pastries.</p>
+            <a href="#menu" class="btn">See Our Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-item">
+                <h3>Espresso</h3>
+                <p>$3.00</p>
+                <p>Rich and bold espresso shot.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Latte</h3>
+                <p>$4.50</p>
+                <p>Smooth latte with steamed milk and a shot of espresso.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Cappuccino</h3>
+                <p>$4.00</p>
+                <p>Classic cappuccino with a perfect frothy top.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div id="formResponse"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Coffee Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
